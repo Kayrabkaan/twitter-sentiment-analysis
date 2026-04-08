@@ -10,14 +10,10 @@ It provides insights into public opinion on specific topics.
 ## Dataset
 - A sample dataset of tweets is included (`twitter_training.csv`).  
 - The dataset was freely available online for demonstration purposes.  
-- The dataset has been preprocessed (cleaned) to remove unnecessary characters, links, and emojis.
+- The dataset was preprocessed for ML training (optional cleaning code provided separately).
 
-## Data Cleaning & Preprocessing
-- **Two-step cleaning process**:
-  1. **Initial cleaning:** removal of special characters, links, emojis, and unnecessary spaces  
-  2. **Second pass:** ensures any remaining unwanted characters or noise are removed  
-- Tokenization and normalization  
-- Creation of a `cleaned_dataset.csv` ready for sentiment analysis  
+> Note: The data cleaning steps were used for training the ML model. 
+> In the main analysis workflow, the system uses the Twitter API to fetch the latest 100 tweets per hashtag.
 
 ## Model & Analysis
 - Sentiment classification using Python libraries  
@@ -37,12 +33,12 @@ It provides insights into public opinion on specific topics.
 
 ## How to Run
 1. Clone the repository  
-2. Open `Twitter_Sentiment_Analysis.ipynb` in Jupyter Notebook or Google Colab  
+2. Open `Main Algorithm.py` in Jupyter Notebook or Google Colab  
 3. Run the notebook step by step to see analysis and visualizations  
 4. Ensure required libraries from `requirements.txt` are installed  
 
-> Optional: For those interested in data cleaning, the code to clean the raw dataset is provided in the notebook. 
-> You can use it to preprocess the data yourself.  
+> Optional: For those interested in data cleaning, the code is provided as a separate file. 
+> You can use it to preprocess the dataset yourself.
 
 ## Notes
 - **No API tokens are included** for security reasons.  
